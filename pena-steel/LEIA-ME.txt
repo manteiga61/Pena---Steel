@@ -1,0 +1,35 @@
+VÍDEOS DO BANNER
+Coloque os 3 vídeos (MP4, H.264, sem áudio, ~1080p, até 6 MB cada) em assets/videos/ com estes nomes:
+  relogio.mp4  colar.mp4  pulseira.mp4
+Sem os vídeos, o banner mostra as fotos de capa (assets/images/hero/) e continua funcionando.
+
+ARQUIVOS NOVOS
+  js/hero.js
+Os arquivos antigos (css/style.css, js/script.js, admin/admin.css, admin/admin.js) continuam como estão.
+
+RECRIADOS DO ZERO
+  css/style.css, js/script.js, admin/admin.css, admin/admin.js
+
+ANTES DE PUBLICAR
+  1. Em js/script.js, troque CFG.whats (linha 4) pelo WhatsApp real: 55 + DDD + número, sem espaços.
+  2. Loja e painel compartilham os dados pelo navegador (localStorage). Produtos cadastrados em um
+     aparelho NÃO aparecem em outro. Para uso real, é preciso um banco de dados (ex.: Supabase).
+  3. O painel /admin não tem senha. Não publique assim.
+  4. Logo: assets/images/logo.png continua sendo usado no ícone da aba e na seção "Sobre".
+
+BANNER ANIMADO (sem precisar de vídeo)
+  O banner usa as fotos em assets/images/hero/ com movimento de câmera, reflexo de luz, poeira e grão de filme.
+  Se você colocar relogio.mp4 / colar.mp4 / pulseira.mp4 em assets/videos/, o vídeo passa a ser usado automaticamente.
+
+CELULAR PRIMEIRO
+  Todo o CSS é mobile-first: a base é o celular e os @media (768px tablet, 1024px computador) só ampliam.
+  premium.css e admin-premium.css foram incorporados a style.css e admin.css (podem ser apagados se ainda existirem).
+
+FOTOS DAS CATEGORIAS (carrossel "Escolha por categoria")
+  Coloque as fotos em assets/images/categorias/ com os nomes: masculino.jpg, feminino.jpg, pulseiras.jpg,
+  correntes.jpg, aneis.jpg, outros.jpg (vertical 4:5, ex. 800x1000). Sem foto, aparece um ícone no lugar.
+
+SUPABASE
+  1) Rode supabase/setup.sql no SQL Editor (troque o e-mail do admin antes).
+  2) Cole URL e chave publicável em js/supabase-config.js.
+  3) Crie o usuário admin em Authentication > Users. Detalhes no guia enviado no chat.
