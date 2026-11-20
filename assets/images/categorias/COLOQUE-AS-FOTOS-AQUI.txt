@@ -1,0 +1,12 @@
+Coloque aqui as fotos de cada categoria (acessório sozinho ou uma pessoa usando):
+
+  masculino.jpg   (relógios masculinos)
+  feminino.jpg    (relógios femininos)
+  pulseiras.jpg
+  correntes.jpg
+  aneis.jpg
+  outros.jpg
+
+Formato ideal: vertical 4:5 (ex.: 800 x 1000 px), JPG, até ~200 KB cada.
+Dica: fundo escuro e o acessório no centro-alto da imagem (a parte de baixo recebe o nome da categoria).
+Para usar PNG/WEBP ou outro nome, altere CAT_IMG no começo de js/script.js.
